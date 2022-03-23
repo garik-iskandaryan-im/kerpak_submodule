@@ -1,6 +1,3 @@
-const crypt = require('app/helpers/crypt');
-const CONSTANTS = require('app/constants');
-
 module.exports = (sequelize, DataTypes) => {
     const fields = {
         id: {
