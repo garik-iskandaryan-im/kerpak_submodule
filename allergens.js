@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         name: {
             type: DataTypes.ENUM(ALLERGENS.map(allergen => allergen.id)),
             allowNull: true,
-            field: 'name1',
+            field: 'name',
         }
     };
 
