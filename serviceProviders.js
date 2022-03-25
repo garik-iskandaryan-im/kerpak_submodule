@@ -229,7 +229,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(255),
             allowNull: true,
             field: 'stripe_id'
-        }
+        },
+        weightConfig: {	
+            type: DataTypes.INTEGER,	
+            allowNull: false,	
+            field: 'weight_config'	
+        },
     };
 
     const definition = {

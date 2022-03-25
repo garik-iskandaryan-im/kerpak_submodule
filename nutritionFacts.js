@@ -1,3 +1,4 @@
+const { NUTRITION_TYPES } = require('../constants');
 
 module.exports = (sequelize, DataTypes) => {
     const fields = {
@@ -15,6 +16,11 @@ module.exports = (sequelize, DataTypes) => {
         value: {
             type: DataTypes.STRING(255),
             field: 'value',
+        },
+        type: {	
+            type: DataTypes.ENUM(NUTRITION_TYPES.list),	
+            allowNull: false,	
+            field: 'type'	
         }
     };
 

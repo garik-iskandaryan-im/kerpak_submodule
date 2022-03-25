@@ -141,6 +141,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(255),
             field: 'imageSmall'
         },
+        weightType: {	
+            type: DataTypes.ENUM(CONSTANTS.WEIGHT_TYPES.list),	
+            field: 'weight_type'	
+        }
     };
 
     const definition = {
